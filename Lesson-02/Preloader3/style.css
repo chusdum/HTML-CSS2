@@ -1,0 +1,24 @@
+body{background-color: #333;}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    margin: 100px;
+}
+
+.box-sm{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    transform: translateX(-40px)translateY(-40px);
+    animation:move 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move{
+    0% {transform: translateX(-40px)translateY(-40px);}
+    25% {transform: translateX(220px)translateY(-40px);}
+    50% {transform: translateX(220px)translateY(220px);}
+    75% {transform: translateX(-40px)translateY(220px);}
+    100%{transform: translateX(-40px)translateY(-40px);}
+}

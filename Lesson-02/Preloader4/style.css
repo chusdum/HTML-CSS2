@@ -1,0 +1,38 @@
+body{
+    background-color: #333;
+    perspective: 700px;
+}
+.box-lg{
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    margin: 200px auto;
+    /* transform: rotateY(45deg); */
+    animation:rotation1 5s 3 ;
+    perspective: 300px;
+    
+}
+
+.box-sm{
+    width:190px ;
+    height:190px ;
+    background-color: white;
+    border: 5px solid #333;
+    animation:rotation1 5s 3;
+}
+
+@keyframes rotation1
+{
+    from {transform: rotateY(0);}
+    to{transform: rotateY(360deg);}
+}
+
+@keyframes rotation2 {
+    from {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(-720deg);
+    }
+}
