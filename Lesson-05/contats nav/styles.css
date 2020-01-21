@@ -1,0 +1,50 @@
+body {
+    background-color: #333;
+}
+
+nav{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    /* background-color: #fff; */
+    padding: 4px;
+    
+}
+#contacts{
+    overflow: hidden; /*ascundem elementele din caontainer pina nu sunt active*/
+}
+#contacts li{
+    transform: translateY(10.35em);
+    transition: 1s;
+}
+#contacts:hover li {
+
+    transform: translateY(0);
+}
+#contacts a{
+    background-color: rgb(255, 251, 0);
+    display: block; /*lucram cu textul ca cu un bloc*/
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    color: #333;
+    margin-bottom: 0.4em;
+    text-align: center; /*centram textul pe orizontala*/
+    line-height: 3em;   /*centram textul pe verticala*/
+    box-shadow:0 0 4px white;
+}
+
+
+#contacts li:last-child a
+{
+    margin-bottom: 0;/*stergem ultima margina de jos*/
+    background-color: #222;
+    width: 2.9em;
+    height: 2.9em;
+    border: 0.1em solid rgb(255, 136, 0);
+    /* box-sizing: border-box; !!!!!!de studiat!!!!! */
+    
+}
+
+/* 1em= 100% x font-size curent element
+1.5em=150% x font-size curent element */

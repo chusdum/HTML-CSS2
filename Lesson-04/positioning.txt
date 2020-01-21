@@ -1,0 +1,30 @@
+CSS Positioning
+
+        *manage elements placements strategy
+            -DOCUMENT ELEMENTS FLOW (flux de elemente intr-un document)
+
+scheme de pozitionare
+    -static     
+                (Document elements flow -elementele se aranjeaza in fluxul sau normal 
+                 si nu afecteaza alte elemente)
+    -relative   
+                Elementul poz. relativ pe de o parte ramina in flux , dar pe de alta 
+                parte are posibilitatea de a fi deplasat in cele 4 directii fara a 
+                fi afectate celelalte elemente !!!Fata de pozitia lui initiala!!!!
+                !!! pentru deplasare , folosim coordonatele (top,right,bottom,left)
+                !!! In acest regim mai aste o proprietate "z-index " ce permite 
+                deplasarea desupt sau deasupra fata de alte elemente
+    -absolute
+                elementul pozitionat ,absolut, este scos /taiat din fluxul curent si 
+                plasat intr-un flux propriu in acelea-si coordonate. Astfel incit 
+                acest element se comporta asa ca si cum celelalte elmente n-ar 
+                exista si invers
+                !!! Cele 4 coordonate se masoara de la laturele ferestrei (nu de la body) !!!!
+
+
+    -fixed
+    -!!!!sticky (NEW & BUGGY) !!!!!
+
+
+
+pentru a lucra in % din fereastra folosim "100vw" / 100vh

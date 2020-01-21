@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positioning-relative</title>
+    <style>
+        body {background-color: #333;}
+        .container {border: 5px solid red;
+        float: left;
+        padding: 10px;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+            
+        }
+        #d1{
+            background-color: rgba(255, 255, 255, 0.603);
+        }
+        #d2 {
+            background-color: rgb(113, 209, 105);
+            position: relative;
+            /* left: 50px;
+            top: 50px; */
+            /* right: -50px;
+            bottom: -50px; */
+            /* margin-top: 50px ;
+            margin-left: 50px; */
+            z-index: -1;
+            top: -100px;
+            
+        }
+        #d3 {
+            background-color: rgb(95, 138, 207);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="d1">1</div>
+        <div id="d2">2</div>
+        <div id="d3">3</div>
+    </div>
+</body>
+</html>
