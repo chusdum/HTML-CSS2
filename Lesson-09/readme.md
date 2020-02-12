@@ -2,7 +2,8 @@
 
 Cind-va se folosea metoda :
     SIZE (width/height)
--   fixed layouts , domina calculul in pixeli (px)
+-   fixed layouts ( domina calculul in pixeli (px) )
+<hr>
 
 Mai tirziu , dupa 2010 , cind au aparut monitoarele cu rezolutia diferita
 -   fluid layouts (px+%)
@@ -16,13 +17,12 @@ Mai tirziu , dupa 2010 , cind au aparut monitoarele cu rezolutia diferita
 -relative units (%,vh,vw,vmin,vmax,em,rem,.....)
 
 <h2>-CSS media queries</h2>
-    *   Acestea sunt niste reguli/conditii care pot sa activeze/dezactiveze 
-        partial CSS-ul in dependenta de device si de parametrii acestuia.
+Acestea sunt niste reguli/conditii care pot sa activeze/dezactiveze partial CSS-ul in dependenta de device si de parametrii acestuia.
 
-    *   Syntaxis: 
-    ```
-        @media CONDITION{}
-    ```
+*   Syntaxis: 
+```
+@media CONDITION{}
+```
     
 
     
@@ -36,8 +36,12 @@ adaptive / responsive
 
 
 <h2>Adaugator</h2>
--   display: table, table-*
--   De citit despre -> :first of type
+
+```
+display: table, table-*
+
+De citit despre -> :first of type
+```
 
 
 <h2>PE ACASA:</h2>
