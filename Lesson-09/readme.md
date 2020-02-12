@@ -48,5 +48,5 @@ De citit despre -> :first of type
 
 De facut pentru ecrane mai mici de 1000px , sa se afiseze img = logo-sm.png
  ```
-       HINT: de studiat <picture> html5 + <img>
+ HINT: de studiat <picture> html5 + <img>
  ```
