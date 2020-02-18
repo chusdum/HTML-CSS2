@@ -1,4 +1,1 @@
-inline block si table uneori nu se impaca una cu alta
-
-
-!!!!!!!методология БМ!!!!!!!!!!!
+HW : de facut meniul de sus de pe siteul: http://html.dynamiclayers.net/at/appico/index.html#header
