@@ -1,0 +1,91 @@
+body{
+    font-family: 'Roboto',
+    sans-serif;
+}
+/*stiluri comune/universale pentru tot site-ul*/
+.container{
+    width: 1140px;
+    margin: auto;
+    background-color: green;
+}
+.tr{
+    text-align: right;
+}
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center;
+}
+/*stiluri specifice pentru sectiune*/
+#features .table{ /*afectam doar sectiunea tble din features*/
+    display: table;
+
+}
+#features .table .row {
+    display: table-row;
+
+}
+#features .table .row > *{
+    display: table-cell;
+    background-color: red;
+    vertical-align: top;
+
+}
+.table .row>ul{
+    width: 30%;
+}
+/* .table .row>ul:first-child {
+    text-align: right;
+} */
+.table .row>div {
+    width: 40%;
+    /* text-align: center; */
+}
+.table .row>div>img {
+    width: 80%;
+}
+#features li::before{
+    content: "";
+    color: #222;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 3.6em;
+}
+#features ul>li>h2{
+    margin-bottom: 2em;
+    font-size: 1.5em;
+}
+#features ul:first-child li::before {
+    left: 2em;
+
+}
+
+#features ul:last-child li::before {
+    right: 2em;
+
+}
+
+
+#features ul:first-child li:nth-child(1)::before {
+    background-image: url(images/2.svg);
+}
+
+#features ul:first-child li:nth-child(2)::before {
+    background-image: url(images/3.svg);
+}
+#features ul:first-child li:nth-child(3)::before {
+    background-image: url(images/4.svg);
+}
+
+#features ul:last-child li:nth-child(1)::before {
+    background-image: url(images/5.svg);
+}
+#features ul:last-child li:nth-child(2)::before {
+    background-image: url(images/6.svg);
+}
+#features ul:last-child li:nth-child(3)::before {
+    background-image: url(images/7.svg);
+}
