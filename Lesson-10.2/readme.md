@@ -3,12 +3,8 @@
 sunt mai multe resurse 
 
 ```
-
 https://knewheeler.github.io/slick/
 https://owlcarousel2.github.io/OwlCarousel2/
-    
-
-
 ```
 intram pe cdnjs.com -> cautam owl carousel2 -> conectam de la CSS a 2-a si a 4-a
 in head
