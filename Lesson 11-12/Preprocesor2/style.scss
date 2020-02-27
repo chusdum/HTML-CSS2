@@ -1,0 +1,89 @@
+/*initierea variabelelor*/
+$dark:  #333;
+$light: orange;
+$size: 1.5em;
+$angle: -172deg;
+$quantity: 12;
+
+/* functia de centrare centrare*/
+@mixin center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    background-color: $dark;
+    color: $light;
+}
+
+#fan{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    h2,p{
+        margin: 0; 
+    }
+
+    &:hover{
+        li{
+           @for $i from 1 through 12 {
+               &:nth-child(#{$i}) {
+                   transform: rotate($angle * $i / $quantity);
+                   transition: 2s;
+                   
+                   
+               }
+           }
+        }
+    }
+    li{
+        // border: 1px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: $size;
+        padding: $size;
+        position: absolute;
+        background-color:$dark;
+        width:$size*30;
+        height: $size*2.8;
+        @include center; //sa aplicat mixinul setat mai sus 'center'
+        transform-origin: left;
+        border-radius: 50% $size*2 $size*2 50%;
+        // &:nth-child(1){
+        //     transform: rotate(25deg);
+        // }
+        &:before{
+            content:"";
+            position: absolute;
+            
+            top: $size*2;
+            bottom: $size*2;
+            left: $size/8;
+            margin: auto;
+            border: 2px solid $dark ;
+            border-radius: 50% ;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: $dark;
+
+
+
+        }
+        @for $i from 1 through 12 {
+
+            &:nth-child(#{$i}) {
+                // transform: rotate($angle * $i / $quantity);
+                transition: 2s;
+                background-color: lighten($dark, $i * 3%);
+                color: lighten($light, $i * 3%);
+                box-shadow: 0 0 $size * 0.2 $size * 0.1 lighten($light, $i * 1.5%);
+                text-align: right;
+            }   
+        }
+    }
+}
