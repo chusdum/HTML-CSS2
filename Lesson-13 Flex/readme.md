@@ -15,6 +15,6 @@ aligment: space-around,space-between,space-evently,stretch
 
 ```
 
-flexfroggy.com -> de jucat
+fhttp://flexboxfroggy.com/ -> de jucat
 
 ```
