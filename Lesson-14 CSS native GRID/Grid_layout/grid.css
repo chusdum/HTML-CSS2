@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CCC;
+}
+/* container */
+#content {
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    display: grid; /*conectam grid-ul*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*Distribuim continutul in 4 coloane egale*/
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-row-gap: 1em; /*lasa un rind de text pe verticala*/
+    grid-column-gap: 1em; /*lasa un lind de text pe orizontala*/
+}
+#content article:nth-child(4) {
+grid-row-start: 2;
+grid-row-end:4;
+}
+
+#content article:nth-child(5) {
+ grid-row-start: 2;
+ grid-row-end:4;
+ }
+ #content article:nth-child(6) {
+     grid-row-start: 2;
+     grid-row-end: 4;
+ }
+
+#content article:nth-child(7) {
+ grid-row-start: 2;
+ grid-row-end:4;
+ }
+
+
+#content header {
+    
+    grid-column-end: 3; /*setam in care coloana sa se termine !!!se ia cu -1!!!!*/
+    grid-column-start: 1;
+}
+
+header {
+    background-color: red;
+}
+article {
+    background-color: yellow;
+}
+
+footer {
+    background-color: green;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
