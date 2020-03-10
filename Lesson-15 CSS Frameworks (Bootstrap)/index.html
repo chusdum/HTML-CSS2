@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Layout</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- conectam bootstrapul de pe https://getbootstrap.com/ => get started => copiem silul CSS in head iar scripturile la sfirsitul lui body!!!-->
+<div class="container mt-3 mb-3">
+    <section id="carousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow  1000*400-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.picsum.photos/id/290/1140/400.jpg" alt="Los Angeles">
+                <div class="carousel-caption text-dark bg-light">
+                    
+
+                    <div class="row">
+                        <div class="col-6"><img src="img/avataaars (3).png" class="img-fluid" alt=""></div>
+                        <div class="col-6">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                
+        
+            <div class="carousel-item">
+                <img src="https://i.picsum.photos/id/291/1140/400.jpg" alt="Chicago">
+                <div class="carousel-caption text-dark bg-light">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, sequi.</p>
+                </div>
+
+            </div>
+        <div class="carousel-item">
+
+                <img src="https://i.picsum.photos/id/284/1140/400.jpg" alt="New York">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon "></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" data-slide="next">
+            <span class="carousel-control-next-icon "></span>
+        </a>
+
+
+    </section>
+</div>
+
+    <section id="news" class="container">
+    <div class="row" >
+        <!-- scrim clasa col , sa inteleaga ca-i coloana (-lg pentru ecrane largi) , tot asa pentru rinduri (row) -->
+            <article class="col-lg-3"> 
+                <h2 class="mt-3 mb-5 ">Lorem ipsum dolor sit amet.</h2>
+                <img  src="https://i.picsum.photos/id/293/254/500.jpg" class="img-fluid mb-lg-5 mb-2" alt="" >
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis culpa corrupti voluptatum laboriosam beatae quibusdam quo autem vel ipsam ex quisquam nam veniam tenetur excepturi voluptates, sunt voluptatem repudiandae? Itaque ex illum consectetur deserunt exercitationem veniam natus beatae asperiores perspiciatis explicabo, possimus dicta voluptate numquam dolorem cupiditate vel, quo nisi!
+                </p>
+                <p>
+                    Veritatis voluptatum nostrum praesentium quis eius. Molestiae asperiores unde ullam architecto maxime harum cum nulla repellendus, rerum ipsa deserunt in! Reiciendis, impedit. Ipsum, blanditiis. Quis dignissimos animi similique perferendis. Neque delectus eaque obcaecati fugit. At excepturi beatae reprehenderit earum repudiandae voluptatibus alias perferendis natus eligendi optio, nemo sit. Praesentium, velit.
+                </p>
+                <p>
+                    Obcaecati, iusto corrupti? Omnis explicabo laudantium eius deleniti, animi consectetur ipsam error inventore esse quisquam numquam fugit doloribus! Vero, quisquam! Ex architecto sequi consequatur at velit nemo earum accusamus magnam neque mollitia tempora hic delectus ipsa quia voluptate suscipit distinctio enim adipisci eligendi voluptatum numquam, illum recusandae fugiat! Dicta, voluptate?
+                    <a class="btn btn-secondary rounded-pill" href="#" role="button">READ MORE...</a>
+                </p>
+            </article>
+
+            <article class="col-lg-3">
+                <h2 class="mt-3 mb-5 ">Lorem ipsum dolor sit amet.</h2>
+                <img src="https://i.picsum.photos/id/294/255/500.jpg" class="img-fluid mb-lg-5 mb-2" alt="" >
+                <p>
+                    Modi sapiente dolorem quis commodi, dolor officia? Repudiandae fuga modi laboriosam nam culpa tempora atque nesciunt, debitis numquam quidem doloremque ex laborum expedita sequi. Aliquid autem iusto reprehenderit? Minus, vel in? Sed soluta commodi explicabo sunt ut! Aut, eum eligendi, adipisci quae nulla facere fugiat impedit, deserunt atque optio sint.
+                </p>
+                <p>
+                    Maxime enim placeat eos voluptas labore hic veritatis, aliquam voluptates omnis sapiente nisi a ipsa quae suscipit illum architecto perspiciatis sit tempore? Quos saepe ea inventore in labore accusantium architecto vero tempore a quo ipsum dicta fugit est, alias nihil eos unde mollitia dignissimos dolore quia cum similique enim quibusdam.
+                </p>
+                <p>
+                    Quia asperiores, sint suscipit reprehenderit quam at, consequatur, delectus repellendus culpa velit quibusdam quos. Reprehenderit ipsa aliquam, alias ipsum omnis a non natus, corporis quo odit, ratione voluptates quod. Laboriosam, quos corporis fuga aliquid dolore dicta illo obcaecati inventore impedit voluptates esse quas dolorem provident? Maxime quidem quaerat earum voluptate?
+                    <a class="btn btn-secondary rounded-pill" href="#" role="button">READ MORE...</a>
+                </p>
+            </article>
+
+            <article class="col-lg-6">
+                <h2 class="mt-3 mb-5 ">Lorem ipsum dolor sit amet.</h2>
+                <img src="https://i.picsum.photos/id/295/540/500.jpg" class="img-fluid mb-lg-5 mb-2" alt="" >
+                <p>
+                    Voluptas ratione minima deserunt expedita id modi inventore quibusdam sint, dolorum rem mollitia. Facere ratione quia et ad id eaque repudiandae nam modi atque, ipsa, veniam saepe totam repellendus magnam nisi sed harum laborum sint voluptatem quis cumque fuga neque veritatis? Animi at aliquid inventore libero similique, quae dolore et.
+                </p>
+                <p>
+                    Tenetur unde quo facilis praesentium odio dignissimos maxime neque optio beatae ducimus! Nobis quisquam corrupti natus ut eligendi pariatur omnis voluptatem perspiciatis perferendis est. Suscipit doloribus illo est qui in modi magnam unde, fugit perspiciatis, sequi exercitationem porro similique? Amet, ducimus error tenetur possimus rerum atque nostrum officia. Temporibus, aut?
+                </p>
+                <p>
+                    Inventore molestiae ipsum dicta consequatur sit illum eaque beatae rerum non quaerat nostrum obcaecati quas, nesciunt similique animi ipsam amet ex commodi consectetur excepturi architecto. Facere adipisci ipsa hic doloribus repellat quaerat assumenda omnis aut itaque odio distinctio fuga fugit quibusdam, temporibus corporis illo accusantium suscipit ipsum officia obcaecati provident!
+                    <a class="btn btn-secondary rounded-pill" href="#" role="button">READ MORE...</a>
+                </p>
+                <p>
+                    Inventore molestiae ipsum dicta consequatur sit illum eaque beatae rerum non quaerat nostrum
+                    obcaecati quas, nesciunt similique animi ipsam amet ex commodi consectetur excepturi architecto.
+                    Facere adipisci ipsa hic doloribus repellat quaerat assumenda omnis aut itaque odio distinctio fuga
+                    fugit quibusdam, temporibus corporis illo accusantium suscipit ipsum officia obcaecati provident!
+                    <a class="btn btn-secondary rounded-pill" href="#" role="button">READ MORE...</a>
+                </p>
+            </article>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,13 @@
+body{
+    background-color: #333;
+    color: aliceblue;
+}
+
+#news h2{
+    /*hixam inaltime lui h2*/
+    height: 2em;
+   
+}
+.bg-light{
+    opacity: 0.5;
+}
